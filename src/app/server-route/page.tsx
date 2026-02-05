@@ -1,3 +1,14 @@
-export default function Page(){
-    return <h1>Page</h1>
+import { serverSideFunction } from "@/utils/server-utils"
+import { ImageSlider } from "@/components/ImageSlider";
+
+export default function ServerRoutePage(){
+    console.log("Server route rendered");
+const result = serverSideFunction();     
+    return( 
+    <>
+        <h1>Server Route Page</h1>
+        <p>{result}</p>
+        <ImageSlider/>
+    </>
+    );
 }
