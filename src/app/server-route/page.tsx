@@ -3,7 +3,7 @@ import { ImageSlider } from "@/components/ImageSlider";
 
 export default function ServerRoutePage(){
     console.log("Server route rendered");
-const result = serverSideFunction();     
+const result = serverSideFunction();
     return( 
     <>
         <h1>Server Route Page</h1>
